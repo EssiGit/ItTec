@@ -71,45 +71,65 @@
 
         <main>
             <!-- Hier kommt der Inhalt hin!!! -->
-            <div class="tile is-ancestor">
-            <div class="section">
-                <p class="title">Java Wurst Buch</p>
+            <section class="section">
+                <div class="columns">
+                    <div class="column is-one-quarter">
+                        <figure class="image is-4by5">
+                            <img src="img\JavaIsGreat2.jpg">
+                        </figure>
+                    </div>
 
-                <figure class="image is-9by16">
-                    <img src="img\JavaIsGreat2.jpg">
-                </figure>
-
-            </div>
-                <div class="section">
+                    <div class="column">
                         <p class="title">Java Wurst Buch</p>
                         <p class="subtitle">Aligned with the right column</p>
                         <div class="content">
                             <p>Das Buch beschäftigt sich mit dem Thema Depressionen unter Verwendung der Java-Programmierung, ist jedoch inhaltlich unzureichend und schlecht geschrieben.</p>
                         </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <div class="content">
-                            <p class="title">$333</p>
-                            <p class="subtitle">GRATIS Lieferung relativ bald!</p>
-                            <p class="subtitle">Menge:</p>
+                    </div>
+
+                    <div class="column is-one-quarter">
+                        <article class="tile is-child box">
                             <div class="content">
-                                <p>Preis: $333</p>
-                            </div>
-                            <div class="navbar-item">
+                                <p class="title">333 €</p>
+                                <p class="subtitle">GRATIS Lieferung relativ bald!</p>
+                                <div class="columns">
+                                    <div class="column is-half">
+                                        <p class="subtitle">Menge:</p>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field has-addons is-pulled-right">
+                                            <div class="control">
+                                                <a class="button is-light">
+                                            <span class="icon">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </span>
+                                                </a>
+                                            </div>
+                                            <div class="control">
+                                                <input type="text" class="input" value="1" style="min-width: 40px; max-width: 45px">
+                                            </div>
+                                            <div class="control">
+                                                <a class="button is-light">
+                                            <span class="icon">
+                                              <i class="fa-solid fa-plus"></i>
+                                            </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="buttons">
                                     <a class="button" href="warenkorb.html">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </span>
                                         <span>in den Warenkorb</span>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer class="footer">
