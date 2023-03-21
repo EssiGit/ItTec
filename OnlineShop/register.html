@@ -71,6 +71,83 @@
 
         <main>
             <!-- Hier kommt der Inhalt hin!!! -->
+            <section class="section">
+                <form class="box" style="max-width: 600px; margin: auto">
+                    <h1 class="title is-4">Registrieren</h1>
+                    <hr>
+                    <div class="field">
+                        <label class="label">E-Mail*:</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="max.mustermann@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Vorname*:</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Max" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Nachname*:</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Mustermann" required>
+                        </div>
+                    </div>
+
+                    <div class="field" is-grouped>
+                        <label class="label">Adresse*:</label>
+                        <div class="level">
+                            <div class="level-item control" style="max-width: 400px">
+                                <input class="input" type="text" placeholder="Ort" required>
+                            </div>
+                            <div class="level-item control" style="max-width: 150px">
+                                <input class="input" type="text" placeholder="Postleitzahl" required>
+                            </div>
+                        </div>
+                        <div class="level">
+                            <div class="level-item control" style="max-width: 400px">
+                                <input class="input" type="text" placeholder="Straße" required>
+                            </div>
+                            <div class="level-item control" style="max-width: 150px">
+                                <input class="input" type="text" placeholder="Hausnummer" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Telefonnummer:</label>
+                        <div class="control">
+                            <input class="input" type="tel" placeholder="+49 12345 223455">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" required>
+                                Ich erkläre, dass ich die <a href="#">AGB</a> gelesen habe.*
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Senden</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-link is-light">Abbrechen</button>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="content is-small">
+                        <p class="is-small">Mit <strong>*</strong> markierte Felder sind <strong>Pflicht</strong>.</p>
+                    </div>
+
+                </form>
+            </section>
         </main>
 
         <footer class="footer">
