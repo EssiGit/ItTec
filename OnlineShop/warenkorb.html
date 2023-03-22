@@ -80,6 +80,19 @@
           <thead>
 
           <style>
+            .remove{
+              background-color: darkgrey;
+              color: black;
+              border: none;
+              padding: 4px 8px;
+              border-radius: 4px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+
+            }
+            .remove:hover{
+              background-color: grey;
+            }
             .quantity {
               display: flex;
               align-items: center;
@@ -158,6 +171,10 @@
               font-size: 16px;
               margin-top: 16px;
               cursor: pointer;
+              transition: background-color 0.3s ease;
+            }
+            .buttonsss:hover{
+              background-color: darkgreen;
             }
 
           </style>
@@ -187,7 +204,7 @@
               </div>
          </td>
             <td> 29,95€</td>
-            <td><button >Entfernen</button></td>
+            <td><button class ="remove">Entfernen</button></td>
           </tr>
           <tr>
             <td><a href="link zur buchseite" title="Java is a Program">Java is a Program</a></td>
@@ -204,7 +221,7 @@
               </div>
          </td>
             <td>666€</td>
-            <td><button >Entfernen</button></td>
+            <td><button class ="remove" >Entfernen</button></td>
           </tr>
           <tr>
             <td><a href="link zur buchseite" title="C++">C++</a></td>
@@ -222,7 +239,7 @@
               </div>
          </td>
             <td>4200€</td>
-            <td><button >Entfernen</button></td>
+            <td><button class ="remove" >Entfernen</button></td>
           </tr>
           <tr>
             <td><a href="link zur buchseite" title="Clean Code">Clean Code</a></td>
@@ -239,7 +256,7 @@
               </div>
          </td>
             <td>4200€</td>
-            <td><button >Entfernen</button></td>
+            <td><button class="remove" >Entfernen</button></td>
           </tr>
             <td></td>
             <td></td>
