@@ -73,143 +73,186 @@
             <!-- Hier kommt der Inhalt hin!!! -->
           <div class ="columns">
           <div class="column is-one-quarter">
-         <div> <table class="table is-fullwidth" summary = "Summe aller Artikel">
-          <caption> Produkte in ihrem Warenkorb
+         <div> <table class="table">
+          <caption><strong>Warenkorb</strong>
 
 
           <thead>
-          <style>
-            table, th, td {
-              border: 1px solid white;
-              border-collapse: collapse;
-            }
-            th, td {
-              background-color: #96D4D4;
-            }
-          </style>
-          <tr>
 
-          <th> Produkt</th>
-          <th> Einzelpreis</th>
-          <th> Anzahl</th>
-          <th> Gesamt</th>
+          <style>
+            .quantity {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100px;
+              height: 30px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            }
+
+            input[type="text"] {
+              font-size: 14px;
+              text-align: center;
+              width: 30px;
+              border: none;
+            }
+
+            buttonforWB {
+              height: 100%;
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              padding: 0 5px;
+            }
+
+            .minus-btn {
+              color: #777;
+            }
+
+            .plus-btn {
+              color: #777;
+            }
+
+            .minus-btn:hover,
+            .plus-btn:hover {
+              background-color: #efefef;
+            }
+
+            .fa-minus,
+            .fa-plus {
+              font-size: 12px;
+            }
+
+            table {
+
+              width: 100%;
+              border-collapse: collapse;
+              margin-bottom: 20px;
+
+
+            }
+            table td, table th {
+              padding: 8px;
+              text-align: left;
+              border: 1px solid black;
+            }
+            table th {
+              background-color: #f2f2f2;
+            }
+
+            table tbody tr:nth-child(even){
+              background-color: #f2f2f2;
+            }
+            table tfoot td{
+              font-weight: bold;
+              text-align: right;
+            }
+            .buttonsss {
+              background-color: #4CAF50;
+              border: none;
+              color: white;
+              padding: 8px 16px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin-top: 16px;
+              cursor: pointer;
+            }
+
+          </style>
+
+
+          <tr>
+            <th> Produkt</th>
+            <th> Einzelpreis</th>
+            <th> Anzahl</th>
+            <th> Gesamt</th>
+            <th> </th>
           </tr>
           </thead>
             <tbody>
           <tr>
             <td><a href="link zur buchseite" title="How to talk to a Women">How to talk to a Women</a></td>
             <td> 29,95€</td>
-            <td>                                     <div class="column">
-              <div class="field has-addons is-pulled-right">
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                                <i class="fa-solid fa-minus"></i>
-                                            </span>
-                  </a>
-                </div>
-                <div class="control">
-                  <input type="text" class="input" value="1" style="min-width: 40px; max-width: 45px">
-                </div>
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-plus"></i>
-                                            </span>
-                  </a>
-                </div>
+            <td>
+              <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="plus-btn" type="button" name="button">
+                  <i class="fas fa-plus"></i>
+                </button>
               </div>
-            </div>
          </td>
-            <td> 1</td>
+            <td> 29,95€</td>
+            <td><button >Entfernen</button></td>
           </tr>
           <tr>
             <td><a href="link zur buchseite" title="Java is a Program">Java is a Program</a></td>
             <td> 333€ </td>
-            <td>                                     <div class="column">
-              <div class="field has-addons is-pulled-right">
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                                <i class="fa-solid fa-minus"></i>
-                                            </span>
-                  </a>
-                </div>
-                <div class="control">
-                  <input type="text" class="input" value="1" style="min-width: 40px; max-width: 45px">
-                </div>
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-plus"></i>
-                                            </span>
-                  </a>
-                </div>
+            <td>
+              <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="plus-btn" type="button" name="button">
+                  <i class="fas fa-plus"></i>
+                </button>
               </div>
-            </div>
          </td>
-            <td>2 </td>
+            <td>666€</td>
+            <td><button >Entfernen</button></td>
           </tr>
           <tr>
             <td><a href="link zur buchseite" title="C++">C++</a></td>
             <td> 700€ </td>
-            <td>                                     <div class="column">
-              <div class="field has-addons is-pulled-right">
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                                <i class="fa-solid fa-minus"></i>
-                                            </span>
-                  </a>
-                </div>
-                <div class="control">
-                  <input type="text" class="input" value="1" style="min-width: 40px; max-width: 45px">
-                </div>
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-plus"></i>
-                                            </span>
-                  </a>
-                </div>
+            <td>
+
+              <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="plus-btn" type="button" name="button">
+                  <i class="fas fa-plus"></i>
+                </button>
               </div>
-            </div>
          </td>
-            <td>6 </td>
+            <td>4200€</td>
+            <td><button >Entfernen</button></td>
           </tr>
           <tr>
             <td><a href="link zur buchseite" title="Clean Code">Clean Code</a></td>
             <td> 700€ </td>
-            <td>                                     <div class="column">
-              <div class="field has-addons">
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                                <i class="fa-solid fa-minus"></i>
-                                            </span>
-                  </a>
-                </div>
-                <div class="control">
-                  <input type="text" class="input" value="1" style="min-width: 40px; max-width: 45px">
-                </div>
-                <div class="control">
-                  <a class="button is-light">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-plus"></i>
-                                            </span>
-                  </a>
-                </div>
+            <td>
+              <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="plus-btn" type="button" name="button">
+                  <i class="fas fa-plus"></i>
+                </button>
               </div>
-            </div>
          </td>
-            <td>6 </td>
+            <td>4200€</td>
+            <td><button >Entfernen</button></td>
           </tr>
+            <td></td>
+            <td></td>
+          <td colspan="1"><strong>Gesammtsumme:</strong></td>
+          <td><strong>9095,95€ und Daniel ist doof</strong></td>
             </tbody>
             <tfoot>
 
             </tfoot>
           </caption>
           </table>
+           <button class ="buttonsss">Weiter einkaufen</button>
+           <button class ="buttonsss">Bestellung abschließen</button>
          </div>
           </div>
           </div>
