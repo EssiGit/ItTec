@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buecherwelt Online</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/3c5864f2fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header>
+  <nav class="navbar is-dark" role="navigation" aria-label="main-navigation" style="height: 80px">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="img/logo.png" width="112" height="50" style="max-height: 100%">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+
+      <!-- Searchbar-->
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <div class="field has-addons">
+            <div class="control">
+              <input type="text" class="input is-expanded" placeholder="Suchbegriff">
+            </div>
+            <div class="control">
+              <a class="button is-link">
+                                            <span class="icon">
+                                              <i class="fa-solid fa-magnifying-glass"></i>
+                                            </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button" href="warenkorb.html">
+                                            <span class="icon">
+                                              <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+              <span>Warenkorb</span>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons has-addons">
+            <a class="button is-link" href="register.html">
+              <strong>Registrieren</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <style>
+    body{
+  font-family: Arial,sans-serif;
+      background-color: #f2f2f2;
+  }
+    .container{
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .buttonsss {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .buttonsss:hover{
+      background-color: darkgreen;
+    }
+
+
+  </style>
+  <div class = "container">
+    <h1> Kauf abgeschlosen</h1>
+    <p> Vielen Dank für Ihre Bestellung!</p>
+    <p> Die Bestellnummer lautet #12345</p>
+    <p> Wir werden Ihre Bestellung so schnell wie möglich bearbeiten</p>
+    <p></p>
+  </div>
+  <button class ="buttonsss">Zurück zur Startseite</button>
+  <button class ="buttonsss">Weiter Einkaufen</button>
+</main>
+</body>
+</html>
