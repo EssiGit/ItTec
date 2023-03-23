@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buecherwelt Online</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="https://kit.fontawesome.com/3c5864f2fe.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <header>
+        <div class="columns is-centered box">
+            <div class="column is-one-fifth">
+                <a class="image" href="index.html" style="">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hier kommt der Inhalt hin!!! -->
+        <section class="section">
+            <form class="box" style="max-width: 800px; margin: auto">
+                <a href="bestellung.html">Zurück zur Eingabe</a>
+                <h1 class="title is-4">Bestellübersicht</h1>
+                <hr>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Vorname:</label>
+                    </div>
+                    <div class="control field-body">
+                        <input class="input is-static" type="text" value="Kai-Uwe" readonly>
+                    </div>
+
+                    <div class="field-label is-normal">
+                        <label class="label">Nachname:</label>
+                    </div>
+                    <div class="control field-body">
+                        <input class="input is-static" type="text" value="Schoon" readonly>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Adresse:</label>
+                    </div>
+                    <div class="control field-body">
+                        <input class="input is-static" type="text" value="Rinderhagenstraße 9." readonly>
+                    </div>
+
+                    <div class="field-label is-normal">
+                        <label class="label">Ort/PLZ:</label>
+                    </div>
+                    <div class="control field-body">
+                        <input class="input is-static" type="text" value="Moormerland 26802" readonly>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" style="text-align: left">E-Mail:</label>
+                    </div>
+                    <div class="control field-body">
+                        <input class="input is-static" type="email" value="kai-uwe.schoon@stud.hs-emden-leer.de">
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" style="text-align: left">Zahlungsart:</label>
+                    </div>
+                    <div class="control field-body">
+                        <input class="input is-static" type="text" value="Kreditkarte" readonly>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="title is-4">Artikel</h1>
+                <table class="table is-hoverable is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th width="100px"> Cover</th>
+                            <th> Produkt</th>
+                            <th> Einzelpreis</th>
+                            <th> Anzahl</th>
+                            <th> Gesamt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img src="img/scaryFemales.jpg"></td>
+                        <td><a href="link zur buchseite" title="How to talk to a Women">How to talk to a Women</a></td>
+                        <td> 29,95€</td>
+                        <td>1</td>
+                        <td> 29,95€</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/JavaIsGreat2.jpg"></td>
+                        <td><a href="link zur buchseite" title="Java is a Program">Java is a Program</a></td>
+                        <td> 333€ </td>
+                        <td>2</td>
+                        <td>666€</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/cpp.jpeg"></td>
+                        <td><a href="link zur buchseite" title="C++">C++</a></td>
+                        <td> 700€ </td>
+                        <td>6</td>
+                        <td>4200€</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/cleanCode.jpg"></td>
+                        <td><a href="link zur buchseite" title="Clean Code">Clean Code</a></td>
+                        <td> 700€ </td>
+                        <td>6</td>
+                        <td>4200€</td>
+                    </tr>
+                    <td colspan="4"><strong>Gesammtsumme:</strong></td>
+                    <td><strong>9095,95€</strong></td>
+                    </tbody>
+                </table>
+
+                <div class="field">
+                    <div class="control">
+                        <a href="success.html" class="button is-link">Bestätigen</a>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Buecherwelt <i class="icon fa-regular fa-copyright"></i>2023</strong>
+                </p>
+            </div>
+        </footer>
+    </body>
+
