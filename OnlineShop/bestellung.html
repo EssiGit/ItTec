@@ -9,69 +9,128 @@
     </head>
 
     <body>
-        <header>
-            <nav class="navbar is-dark" role="navigation" aria-label="main-navigation" style="height: 80px">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="index.html">
-                        <img src="img/logo.png" width="112" height="50" style="max-height: 100%">
-                    </a>
+    <header>
+        <div class="columns is-centered box">
+            <div class="column is-one-fifth">
+                <a class="image" href="index.html" style="">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
 
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
+    <main>
+        <!-- Hier kommt der Inhalt hin!!! -->
+        <section class="section">
+            <form class="box" style="max-width: 600px; margin: auto">
+                <h1 class="title is-4">Rechnungsadresse</h1>
+                <hr>
+                <div class="field">
+                    <label class="label">Vorname*:</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Max" required>
+                    </div>
                 </div>
 
-                <div class="navbar-menu">
+                <div class="field">
+                    <label class="label">Nachname*:</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Mustermann" required>
+                    </div>
+                </div>
 
-                    <!-- Searchbar-->
-                    <div class="navbar-start">
-                        <div class="navbar-item">
-                            <div class="field has-addons">
-                                <div class="control">
-                                    <input type="text" class="input is-expanded" placeholder="Suchbegriff">
-                                </div>
-                                <div class="control">
-                                    <a class="button is-link">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-magnifying-glass"></i>
-                                            </span>
-                                    </a>
-                                </div>
-                            </div>
+                <div class="field" is-grouped>
+                    <label class="label">Adresse*:</label>
+                    <div class="level">
+                        <div class="level-item control" style="max-width: 400px">
+                            <input class="input" type="text" placeholder="Ort" required>
+                        </div>
+                        <div class="level-item control" style="max-width: 150px">
+                            <input class="input" type="text" placeholder="Postleitzahl" required>
                         </div>
                     </div>
-
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a class="button" href="warenkorb.html">
-                                            <span class="icon">
-                                              <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                    <span>Warenkorb</span>
-                                </a>
-                            </div>
+                    <div class="level">
+                        <div class="level-item control" style="max-width: 400px">
+                            <input class="input" type="text" placeholder="Straße" required>
                         </div>
-                        <div class="navbar-item">
-                            <div class="buttons has-addons">
-                                <a class="button is-link" href="register.html">
-                                    <strong>Registrieren</strong>
-                                </a>
-                                <a class="button is-light">
-                                    Log in
-                                </a>
-                            </div>
+                        <div class="level-item control" style="max-width: 150px">
+                            <input class="input" type="text" placeholder="Hausnummer" required>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+                <div class="field">
+                    <label class="label">E-Mail*:</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="max.mustermann@example.com" required>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="title is-4">Zahlungsinformationen</h1>
+                <div class="tabs is-toggle is-centered is-fullwidth">
+                    <ul>
+                        <li class="is-active">
+                            <a>
+                                <span class="icon is-small"><i class="fa-solid fa-credit-card"></i></span>
+                                <span>Kreditkarte</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="icon is-small"><i class="fa-solid fa-money-bill-transfer"></i></span>
+                                <span>Überweisung</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="icon is-small"><i class="fa-brands fa-paypal"></i></span>
+                                <span>PayPal</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <main>
-            <!-- Hier kommt der Inhalt hin!!! Angaben der Bestellung, Bestätigung und Abschluss der Bestellung -->
-        </main>
+                <div class="field">
+                    <label class="label">Kreditkartennummer*:</label>
+                    <div class="control">
+                        <input class="input" type="text" required>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Ablaufdatum*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="12/24" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">CCV*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="CCV" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link">Bestätigen</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link is-light">Abbrechen</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="content is-small">
+                    <p class="is-small">Mit <strong>*</strong> markierte Felder sind <strong>Pflicht</strong>.</p>
+                </div>
+
+            </form>
+        </section>
+    </main>
 
         <footer class="footer">
             <div class="content has-text-centered">
