@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buecherwelt Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/3c5864f2fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header>
+    <div class="columns is-centered box" style="max-height: 150px">
+        <div class="column is-one-fifth">
+            <a class="image" href="index.html" style="display: flex; justify-content: center">
+                <img src="img/logo.png" alt="Buecherwelt" style="width: 50%">
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hier kommt der Inhalt hin!!! -->
+    <section class="section">
+        <form class="box" style="max-width: 700px; margin: auto">
+            <h1 class="title is-4">Buch hinzufügen</h1>
+            <hr>
+            <div class="field">
+                <label class="label">ISBN-13:</label>
+                <div class="control has-icons-right is-grouped">
+                    <input class="input is-danger" type="text" placeholder="978-3-924428-15-8" required>
+                    <!--Warnmeldung-->
+                    <span class="icon is-right">
+                        <i class="fas fa-xmark has-text-danger"></i>
+                    </span>
+                    <p class="is-small has-text-danger"> <b>Das ist eine Warnmeldung!</b></p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Titel:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Titel" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Verlag:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Verlag" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Autor:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Autor" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Preis:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="12,99€" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Beschreibung:</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Beschreibung" required></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Kategorien auswählen:</label>
+                <div class="select">
+                    <select>
+                        <option>Kategorie 1</option>
+                        <option>Kategorie 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Buch-Cover auswählen:</label>
+                <div class="file has-name is-fullwidth">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">Durchsuchen</span>
+                        </span>
+                        <span class="file-name">Noch keine Datei ausgewählt!</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div class="field">
+                <div class="control" style="display: flex; justify-content: center">
+                    <button class="button is-link">Buch hinzufügen</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Buecherwelt <i class="icon fa-regular fa-copyright"></i>2023</strong>
+        </p>
+    </div>
+</footer>
+</body>
+
